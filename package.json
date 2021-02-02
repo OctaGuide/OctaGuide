@@ -1,0 +1,39 @@
+{
+  "name": "octoguide",
+  "version": "1.0.0",
+  "description": "A collection of guides which will improve you gaming experience in the video game.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "build": "browserify -t [babelify --presets[es2015 stage-0 react]] ./src/pages/App.js -o ./public/js/app.js",
+    "build:watch": "watch 'npm run build' src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OctaGuide/OctaGuide.git"
+  },
+  "keywords": [
+    "Gaming",
+    "Guides",
+    "Improvement",
+    "Allrounder",
+    "Solution"
+  ],
+  "author": "Tolga Kara <tolgakara2.0@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OctaGuide/OctaGuide/issues"
+  },
+  "homepage": "https://github.com/OctaGuide/OctaGuide#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babelify": "^10.0.0",
+    "express": "^4.17.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "watch": "^1.0.2"
+  }
+}
